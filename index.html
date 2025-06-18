@@ -42,11 +42,11 @@
     />
     <link rel="icon" href="/images/icon.png" type="image/x-icon" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
       * {
         box-sizing: border-box;
-        font-family: "Chivo", sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
@@ -58,8 +58,8 @@
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
-        background-color: #bfd0b2 !important;
-        overflow: hidden;
+        background-color: #fdf2c9 !important;
+        overflow-x: hidden;
       }
 
       h1,
@@ -80,44 +80,210 @@
         text-decoration: none;
       }
 
-      .container {
+      .navbar-desktop {
+        display: none;
+      }
+
+      .navbar-mobile {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-      }
-
-      .jumping-image-container {
-        display: flex;
-        justify-content: center;
+        padding: 20px;
+        position: relative;
         width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
       }
 
-      .jumping-image {
-        width: 300px;
-        height: 600px;
-        background-image: url("/images/saltando.png");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+      .navbar-menu {
+        width: 30px;
+        height: 30px;
+        background-image: url("/images/menu.svg");
+        background-size: cover;
+        cursor: pointer;
+        fill: #649480;
       }
 
-      .title {
+      .hero {
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 70px);
+      }
+
+      .hero-title {
+        color: #649480;
+        font-size: 56px;
+        font-weight: 800;
         text-align: center;
+        padding: 0 20px;
         position: absolute;
-        top: 272px;
-        font-family: "Plus Jakarta Sans", sans-serif;
-        font-weight: 600;
-        font-size: 38px;
-        color: white;
+        top: 200px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+
+      .hero-line {
+        background-image: url("images/BACKGROUND_LINE.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -30px;
+        left: 0;
+        right: 0;
+      }
+
+      .hero-image {
+        background-image: url("images/BACKGROUND_MOBILE.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 24vh;
+      }
+
+      .hero-button {
+        position: absolute;
+        bottom: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .hero-button-text {
+        color: #649480;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .hero-button-image {
+        width: 24px;
+        height: 24px;
+        background-image: url("images/arrow.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        transform: rotate(90deg);
+      }
+
+      .container {
+        background-color: #f8e199;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="jumping-image-container">
-        <div class="jumping-image"></div>
+    <nav class="navbar-desktop">
+      <div class="navbar-logo">LOGO</div>
+      <div class="navbar-options">
+        <p class="navbar-option">Inicio</p>
+        <p class="navbar-option">¿Quiénes somos?</p>
+        <p class="navbar-option">¿Quiénes somos?</p>
+        <p class="navbar-option">¿Quiénes somos?</p>
       </div>
-      <h1 class="title">Voces<br />que<br />Abrazan</h1>
+    </nav>
+    <nav class="navbar-mobile">
+      <div class="navbar-logo">LOGO</div>
+      <div class="navbar-menu"></div>
+    </nav>
+    <div class="hero">
+      <div class="hero-line"></div>
+      <h1 class="hero-title">
+        Voces<br />
+        que abrazan
+      </h1>
+      <div class="hero-image"></div>
+      <div class="hero-button">
+        <span class="hero-button-text">Continuar</span>
+        <div class="hero-button-image"></div>
+      </div>
     </div>
+    <div class="container">
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+      <p>xxxx</p>
+    </div>
+    <script></script>
   </body>
 </html>
