@@ -34,7 +34,7 @@
     />
     <meta
       property="og:image"
-      content="https://www.vocesqueabrazan.com/images/background.png"
+      content="https://www.vocesqueabrazan.com/images/HERO.png"
     />
     <meta
       property="og:image:alt"
@@ -56,16 +56,15 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.vocesqueabrazan.com/images/background.png"
+      content="https://www.vocesqueabrazan.com/images/HERO.png"
     />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.vocesqueabrazan.com/" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/FAVICON.png" />
+    <link rel="apple-touch-icon" href="/FAVICON.png" />
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -185,12 +184,32 @@
         z-index: 100;
       }
 
+      @media (max-width: 768px) {
+        nav {
+          padding: 1.5rem 1rem;
+        }
+      }
+
       .nav-logo {
-        width: 150px;
-        height: 50px;
-        background-image: url("images/logo.png");
-        background-size: contain;
-        background-repeat: no-repeat;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--purple-dark);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &::before {
+          content: "Voces que Abrazan";
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-logo {
+          font-size: 1.8rem;
+
+          &::before {
+            content: "VQA";
+          }
+        }
       }
 
       .nav-container {
@@ -599,38 +618,20 @@
         background: white;
         border-radius: 20px;
         overflow: hidden;
+        height: 450px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         transition: all 0.3s;
+      }
+
+      @media screen and (max-width: 768px) {
+        .story-card {
+          height: 350px;
+        }
       }
 
       .story-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-      }
-
-      .story-video {
-        width: 100%;
-        height: 250px;
-        background: linear-gradient(
-          135deg,
-          var(--purple-dark) 0%,
-          var(--pink-accent) 100%
-        );
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4rem;
-        color: white;
-      }
-
-      .story-content {
-        padding: 2rem;
-      }
-
-      .story-content h3 {
-        font-size: 1.5rem;
-        color: var(--purple-dark);
-        margin-bottom: 1rem;
       }
 
       /* Donation Section */
@@ -859,7 +860,7 @@
     <!-- Navigation -->
     <nav>
       <div class="nav-container">
-        <div class="nav-logo"></div>
+        <p class="nav-logo"></p>
         <ul class="nav-links" id="navLinks">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
@@ -959,62 +960,9 @@
     <section class="stories" id="historias">
       <h2 class="section-title">Historias que Abrazan</h2>
       <div class="stories-grid">
-        <div class="story-card">
-          <div class="story-video">📹</div>
-          <div class="story-content">
-            <h3 style="font-weight: 600">La historia de María</h3>
-            <p style="margin-bottom: 2rem">
-              Cómo un simple gesto cambió su vida para siempre
-            </p>
-            <a
-              href="#"
-              style="
-                color: var(--orange-bright);
-                text-decoration: none;
-                font-weight: 600;
-              "
-              >Ver en TikTok →</a
-            >
-          </div>
-        </div>
-        <div class="story-card">
-          <div class="story-video">🎬</div>
-          <div class="story-content">
-            <h3 style="font-weight: 600">Rescatando esperanzas</h3>
-            <p style="margin-bottom: 2rem">
-              El día que salvamos a 20 perritos de la calle
-            </p>
-            <a
-              href="#"
-              style="
-                color: var(--orange-bright);
-                text-decoration: none;
-                font-weight: 600;
-                margin-top: 2rem;
-              "
-              >Ver en TikTok →</a
-            >
-          </div>
-        </div>
-        <div class="story-card">
-          <div class="story-video">🎥</div>
-          <div class="story-content">
-            <h3 style="font-weight: 600">Voces que inspiran</h3>
-            <p style="margin-bottom: 2rem">
-              Testimonios de quienes han recibido nuestro abrazo
-            </p>
-            <a
-              href="#"
-              style="
-                color: var(--orange-bright);
-                text-decoration: none;
-                font-weight: 600;
-                margin-top: 2rem;
-              "
-              >Ver en TikTok →</a
-            >
-          </div>
-        </div>
+        <div class="story-card">xxx</div>
+        <div class="story-card"></div>
+        <div class="story-card"></div>
       </div>
     </section>
 
