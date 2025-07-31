@@ -284,7 +284,7 @@
 
       @media (max-width: 768px) {
         .hero {
-          padding: 3rem 1rem;
+          padding: 1rem 1rem;
           min-height: 70vh;
         }
       }
@@ -1105,9 +1105,12 @@
         });
       });
 
-      // Donation function
       function donate() {
-        console.log(`Donating`);
+        gtag("event", "donations", {
+          event_category: "donation",
+          event_label: "donate_button_click",
+          value: 1,
+        });
       }
 
       // Create floating decorative elements
