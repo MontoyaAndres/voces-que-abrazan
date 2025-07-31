@@ -610,20 +610,61 @@
         background: white;
         border-radius: 20px;
         overflow: hidden;
-        height: 450px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         transition: all 0.3s;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
       }
 
-      @media screen and (max-width: 768px) {
+      .tiktok-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f0f0f0;
+        min-height: 450px;
+      }
+
+      .story-card blockquote.tiktok-embed {
+        max-width: 350px !important;
+        min-width: 350px !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .story-card iframe {
+        max-width: 100% !important;
+      }
+
+      .story-card:not(:has(blockquote)) {
+        background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+        min-height: 450px;
+        position: relative;
+      }
+
+      .story-card:not(:has(blockquote))::after {
+        content: "Historia próximamente...";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #999;
+        font-size: 1.2rem;
+      }
+
+      /* Mobile responsive */
+      @media (max-width: 768px) {
         .story-card {
-          height: 350px;
+          min-height: 400px;
         }
-      }
 
-      .story-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        .tiktok-container {
+          min-height: 400px;
+        }
       }
 
       /* Donation Section */
@@ -952,9 +993,195 @@
     <section class="stories" id="historias">
       <h2 class="section-title">Historias que Abrazan</h2>
       <div class="stories-grid">
-        <div class="story-card">xxx</div>
-        <div class="story-card"></div>
-        <div class="story-card"></div>
+        <div class="story-card">
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@vocesqueabrazan/video/7527450068664716549"
+            data-video-id="7527450068664716549"
+          >
+            <section>
+              <a
+                target="_blank"
+                title="@vocesqueabrazan"
+                href="https://www.tiktok.com/@vocesqueabrazan?refer=embed"
+                >@vocesqueabrazan</a
+              >
+              El es Don Fernando… una seguidora nos contacto para decirnos que
+              había visto al señor en el parque de soacha y que veía que tenía
+              una dificultad para comunicarse, lo buscamos por varios días hasta
+              que lo encontramos y lo que más ame fue cuando le dije que si me
+              regalaba los Helados me dijo que no, obviamente los colombianos
+              utilizamos la palabra regalar para decir que nos den algo 💕
+              Hagamos que la empatía y la ayuda sean más virales que el morbo ❤️
+              con un me gusta y seguiendome podemos llegar lejos 🙏por que
+              juntos somos más fuertes💖
+              <a
+                title="foryoupage"
+                target="_blank"
+                href="https://www.tiktok.com/tag/foryoupage?refer=embed"
+                >#foryoupage</a
+              >
+              <a
+                title="videoviral"
+                target="_blank"
+                href="https://www.tiktok.com/tag/videoviral?refer=embed"
+                >#videoviral</a
+              >
+              <a
+                title="paratii"
+                target="_blank"
+                href="https://www.tiktok.com/tag/paratii?refer=embed"
+                >#paratii</a
+              >
+              <a
+                title="vocesqueabrazan"
+                target="_blank"
+                href="https://www.tiktok.com/tag/vocesqueabrazan?refer=embed"
+                >#vocesqueabrazan</a
+              >
+              <a
+                title="personasincreibles"
+                target="_blank"
+                href="https://www.tiktok.com/tag/personasincreibles?refer=embed"
+                >#personasincreibles</a
+              >
+              <a
+                title="paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+                target="_blank"
+                href="https://www.tiktok.com/tag/paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii?refer=embed"
+                >#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</a
+              >
+              <a
+                target="_blank"
+                title="♬ sonido original - VOCES QUE ABRAZAN"
+                href="https://www.tiktok.com/music/sonido-original-7527450105583389446?refer=embed"
+                >♬ sonido original - VOCES QUE ABRAZAN</a
+              >
+            </section>
+          </blockquote>
+        </div>
+        <div class="story-card">
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@vocesqueabrazan/video/7517368768582962437"
+            data-video-id="7517368768582962437"
+          >
+            <section>
+              <a
+                target="_blank"
+                title="@vocesqueabrazan"
+                href="https://www.tiktok.com/@vocesqueabrazan?refer=embed"
+                >@vocesqueabrazan</a
+              >
+              Que la empatía y la ayuda sean más virales que el morbo 🙏 con un
+              me gusta y seguiendome podemos llegar lejos 💕 por que juntos
+              somos más fuertes ❤️
+              <a
+                title="foryoupage"
+                target="_blank"
+                href="https://www.tiktok.com/tag/foryoupage?refer=embed"
+                >#foryoupage</a
+              >
+              <a
+                title="videoviral"
+                target="_blank"
+                href="https://www.tiktok.com/tag/videoviral?refer=embed"
+                >#videoviral</a
+              >
+              <a
+                title="paratii"
+                target="_blank"
+                href="https://www.tiktok.com/tag/paratii?refer=embed"
+                >#paratii</a
+              >
+              <a
+                title="vocesqueabrazan"
+                target="_blank"
+                href="https://www.tiktok.com/tag/vocesqueabrazan?refer=embed"
+                >#vocesqueabrazan</a
+              >
+              <a
+                title="personasincreibles"
+                target="_blank"
+                href="https://www.tiktok.com/tag/personasincreibles?refer=embed"
+                >#personasincreibles</a
+              >
+              <a
+                title="paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+                target="_blank"
+                href="https://www.tiktok.com/tag/paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii?refer=embed"
+                >#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</a
+              >
+              <a
+                target="_blank"
+                title="♬ sonido original - VOCES QUE ABRAZAN"
+                href="https://www.tiktok.com/music/sonido-original-7517368771183971128?refer=embed"
+                >♬ sonido original - VOCES QUE ABRAZAN</a
+              >
+            </section>
+          </blockquote>
+        </div>
+        <div class="story-card">
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@vocesqueabrazan/video/7516663992161504518"
+            data-video-id="7516663992161504518"
+            style="max-width: 605px; min-width: 325px"
+          >
+            <section>
+              <a
+                target="_blank"
+                title="@vocesqueabrazan"
+                href="https://www.tiktok.com/@vocesqueabrazan?refer=embed"
+                >@vocesqueabrazan</a
+              >
+              Que la empatía y la ayuda sean más virales que el morbo 🙏 con un
+              me gusta podemos llegar lejos por que juntos somos mas fuertes ❤️
+              <a
+                title="foryoupage"
+                target="_blank"
+                href="https://www.tiktok.com/tag/foryoupage?refer=embed"
+                >#foryoupage</a
+              >
+              <a
+                title="videoviral"
+                target="_blank"
+                href="https://www.tiktok.com/tag/videoviral?refer=embed"
+                >#videoviral</a
+              >
+              <a
+                title="paratii"
+                target="_blank"
+                href="https://www.tiktok.com/tag/paratii?refer=embed"
+                >#paratii</a
+              >
+              <a
+                title="vocesqueabrazan"
+                target="_blank"
+                href="https://www.tiktok.com/tag/vocesqueabrazan?refer=embed"
+                >#vocesqueabrazan</a
+              >
+              <a
+                title="personasincreibles"
+                target="_blank"
+                href="https://www.tiktok.com/tag/personasincreibles?refer=embed"
+                >#personasincreibles</a
+              >
+              <a
+                title="paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+                target="_blank"
+                href="https://www.tiktok.com/tag/paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii?refer=embed"
+                >#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</a
+              >
+              <a
+                target="_blank"
+                title="♬ sonido original - VOCES QUE ABRAZAN"
+                href="https://www.tiktok.com/music/sonido-original-7516664050861427512?refer=embed"
+                >♬ sonido original - VOCES QUE ABRAZAN</a
+              >
+            </section>
+          </blockquote>
+        </div>
       </div>
     </section>
 
@@ -1164,5 +1391,6 @@
 
       gtag("config", "G-CYMR5GGN7D");
     </script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
   </body>
 </html>
